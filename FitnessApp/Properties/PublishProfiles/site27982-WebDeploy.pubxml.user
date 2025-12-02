@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgapdgldgPU2JhfkXMCGlDgAAAAACAAAAAAAQZgAAAAEAACAAAAC7ZgBvK5G1v8BJZhnBq75JVjZhKksaShaUbgthizvU3gAAAAAOgAAAAAIAACAAAACm9r48rb9rK2MuIi3fWCmTYq3xiFavE3sdwU/GaxsP3yAAAACIew4vBXn+uAEzpYJvxMHgD9OyISbJ4xfsVyHqxRMQWEAAAAD6NdSw+hYrQk8GTMINFU0lr6IHka6V4K8Mzr05+oVwzeoEBHupR/jCHI4iukICfwj46pvgCmx25qOQKluFeSNI</EncryptedPassword>
+    <History>True|2025-06-05T12:03:22.6211102Z||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=SQL6032.site4now.net%3bInitial Catalog=db_ab8766_fitnessapp%3bUser Id=db_ab8766_fitnessapp_admin%3bPassword=amr1234!%40#%24</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="FitnessApp.Models.FitnessAppContext">
+      <Value>Data Source=SQL6032.site4now.net%3bInitial Catalog=db_ab8766_fitnessapp%3bUser Id=db_ab8766_fitnessapp_admin%3bPassword=amr1234!%40#%24</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
