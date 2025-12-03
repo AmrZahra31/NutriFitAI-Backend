@@ -34,7 +34,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
 
-    #  Build المشروع
+    #  Build
     - name: Build
       run: dotnet build --no-restore --configuration Release
 
