@@ -47,7 +47,7 @@ namespace FitnessApp.Bl
             using var transaction = await _context.Database.BeginTransactionAsync(ct);
             try
             {
-                if (user.Gender.ToLower() != "male" || user.Gender.ToLower() != "female")
+                if (user.Gender.ToLower() != "male" && user.Gender.ToLower() != "female")
                     return ApiResponse<object>.Fail("please, enter a valid Gender");
                 var applicationUser = new ApplicationUsers
                 {

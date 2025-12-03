@@ -107,7 +107,7 @@ namespace FitnessApp
                     ValidAudience = builder.Configuration["Jwt:Audience"],
 
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"])),
 
                     ValidateLifetime = false,
                 };
