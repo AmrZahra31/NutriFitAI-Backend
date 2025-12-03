@@ -18,7 +18,7 @@ namespace FitnessApp.Bl
 
                 var issuer = configuration["Jwt:Issuer"];
                 var audience = configuration["Jwt:Audience"];
-                var key = configuration["Jwt:key"];
+                var key = configuration["Jwt:SecretKey"];
 
                 var claims = new List<Claim>();
                 claims.Add(new Claim(JwtRegisteredClaimNames.Name, user.UserName ?? "unKnown"));
