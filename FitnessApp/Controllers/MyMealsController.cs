@@ -144,17 +144,26 @@ namespace FitnessApp.Controllers
         [HttpPost("generateDiet")]
         public async Task<IActionResult> GenerateMeals([FromBody] DietRequestModel model, CancellationToken ct)
         {
-            var result = await _dietService.GenerateMealsAsync(model, ct);
-
-            if (!result.Success)
+            try
             {
-                // Map errors to proper status codes as needed
-                if (result.Message == "Unauthorized") return Unauthorized(result);
-                if (result.Message?.Contains("External") == true) return StatusCode(503, result);
-                return StatusCode(500, result);
-            }
+                var result = await _dietService.GenerateMealsAsync(model, ct);
 
-            return Ok(result);
+                if (!result.Success)
+                {
+                    // Map errors to proper status codes as needed
+                    if (result.Message == "Unauthorized") return Unauthorized(result);
+                    if (result.Message?.Contains("External") == true) return StatusCode(503, result);
+                    return StatusCode(500, result);
+                }
+
+                return Ok(result);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
 
 
