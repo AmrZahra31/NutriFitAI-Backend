@@ -42,9 +42,13 @@ cd NutriFitAI-Backend
 cp appsettings.Development.example.json appsettings.Development.json
 ```
 
-2. Update connection strings, JWT secrets, or API keys in `appsettings.Development.json`.
+2. ```bash
+cp appsettings.example.example.json appsettings.json
+```
 
-3. Apply migrations:
+3. Update connection strings, JWT secrets, or API keys in `appsettings.Development.json`.
+
+4. Apply migrations:
 
 ```bash
 dotnet ef database update
