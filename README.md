@@ -14,7 +14,8 @@ This backend API powers a personalized nutrition and fitness recommendation syst
 - CRUD operations for meals, workouts, and user data
 - History tracking for previously generated plans
 - AI integration for personalized recommendations
-
+- Macros tracking and integration
+- Flexible account deletion
 
 ---
 
@@ -78,4 +79,4 @@ dotnet run --project FitnessApp
 
 ## License
 
-This project is licensed under the [https://github.com/AmrZahra31/NutriFitAI-Backend/blob/main/LICENSE](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
