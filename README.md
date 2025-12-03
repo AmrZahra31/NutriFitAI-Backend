@@ -60,7 +60,19 @@ dotnet ef database update
 dotnet run --project FitnessApp
 ```
 
-- API will be available at: `https://localhost:5001` or `http://localhost:5000`
+### API URL
+
+When running locally, the API will be hosted on the ports defined in:
+
+`Properties/launchSettings.json`
+
+Example:
+```bash
+"applicationUrl": "https://localhost:xxxx;http://localhost:yyyy"
+```
+
+Replace the ports with your actual values.
+
 
 ---
 
