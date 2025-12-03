@@ -160,10 +160,10 @@ namespace FitnessApp.Controllers
             }
             catch (Exception)
             {
+                return StatusCode(500, ApiResponse<object>.Fail("expected meals for this day"));
 
-                throw;
             }
-            
+
         }
 
 
